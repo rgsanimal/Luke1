@@ -21,7 +21,7 @@
           <block type="robot_delay" id="231" inline="true">
             <value name="DELAY">
               <block type="math_number" id="232">
-                <field name="NUM">1000</field>
+                <field name="NUM">1250</field>
               </block>
             </value>
             <next>
@@ -42,7 +42,20 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="244"></block>
+      <block type="movement_stutter" id="254">
+        <next>
+          <block type="robot_delay" id="255" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="256">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="244"></block>
+            </next>
+          </block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
