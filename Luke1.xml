@@ -28,26 +28,35 @@
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="movement_setmotors" id="396" inline="true">
-                    <value name="BOTHMOVLEFT">
-                      <block type="math_number" id="406">
-                        <field name="NUM">50000</field>
-                      </block>
-                    </value>
-                    <value name="BOTHMOVRIGHT">
-                      <block type="math_number" id="407">
-                        <field name="NUM">-50000</field>
+                  <block type="robot_delay" id="670" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="680">
+                        <field name="NUM">1000</field>
                       </block>
                     </value>
                     <next>
-                      <block type="robot_delay" id="493" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="524">
-                            <field name="NUM">5000</field>
+                      <block type="movement_setmotors" id="396" inline="true">
+                        <value name="BOTHMOVLEFT">
+                          <block type="math_number" id="406">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                        <value name="BOTHMOVRIGHT">
+                          <block type="math_number" id="407">
+                            <field name="NUM">-100</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_stop" id="386"></block>
+                          <block type="robot_delay" id="493" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="524">
+                                <field name="NUM">5000</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_stop" id="386"></block>
+                            </next>
+                          </block>
                         </next>
                       </block>
                     </next>
