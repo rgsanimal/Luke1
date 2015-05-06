@@ -51,7 +51,17 @@
               </block>
             </value>
             <next>
-              <block type="movement_stop" id="244"></block>
+              <block type="multimedia_playwav" id="268">
+                <field name="WAV">3</field>
+                <next>
+                  <block type="multimedia_displaybmp" id="307">
+                    <field name="BMP">2</field>
+                    <next>
+                      <block type="movement_stop" id="244"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
         </next>
