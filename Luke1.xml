@@ -1,24 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="14" x="-94" y="247">
-    <next>
-      <block type="controls_if" id="84" inline="false">
-        <value name="IF0">
-          <block type="sensor_object" id="61">
-            <field name="OBJECT">LEFTFRONT</field>
-          </block>
-        </value>
-        <statement name="DO0">
-          <block type="movement_reverse" id="95">
+  <block type="controls_if" id="84" inline="false" x="-90" y="132">
+    <value name="IF0">
+      <block type="sensor_object" id="61">
+        <field name="OBJECT">LEFTFRONT</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="movement_reverse" id="95">
+        <next>
+          <block type="movement_left" id="105">
             <next>
-              <block type="movement_left" id="105">
-                <next>
-                  <block type="movement_forward" id="116"></block>
-                </next>
-              </block>
+              <block type="movement_forward" id="116"></block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
