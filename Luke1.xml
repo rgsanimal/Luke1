@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="9" x="105" y="37">
+  <block type="oled_cleardisplay" id="9" x="-45" y="-111">
     <next>
       <block type="oled_setcursor" id="18" inline="true">
         <value name="STARTX">
@@ -15,6 +15,19 @@
         <next>
           <block type="oled_drawtext" id="41">
             <field name="TEXT">Hello |Luke!</field>
+            <next>
+              <block type="movement_forward" id="51">
+                <next>
+                  <block type="robot_delay" id="120" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="159">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
