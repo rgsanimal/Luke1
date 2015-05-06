@@ -1,19 +1,46 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="84" inline="false" x="-90" y="132">
-    <value name="IF0">
-      <block type="sensor_object" id="61">
-        <field name="OBJECT">LEFTFRONT</field>
+  <block type="controls_repeat" id="144" inline="true" x="-220" y="178">
+    <value name="TIMES">
+      <block type="math_number" id="151">
+        <field name="NUM">10</field>
       </block>
     </value>
-    <statement name="DO0">
-      <block type="movement_reverse" id="95">
-        <next>
-          <block type="movement_left" id="105">
+    <statement name="DO">
+      <block type="controls_if" id="84" inline="false">
+        <value name="IF0">
+          <block type="sensor_object" id="61">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_reverse" id="95">
             <next>
-              <block type="movement_forward" id="116"></block>
+              <block type="robot_delay" id="119" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="152">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_left" id="105">
+                    <next>
+                      <block type="robot_delay" id="130" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="153">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_forward" id="116"></block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
     </statement>
   </block>
