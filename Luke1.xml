@@ -1,70 +1,12 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="213" inline="true" x="-176" y="107">
-    <value name="TIMES">
-      <block type="math_number" id="220">
-        <field name="NUM">4</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_setmotors" id="174" inline="true">
-        <value name="BOTHMOVLEFT">
-          <block type="math_number" id="182">
-            <field name="NUM">100</field>
-          </block>
-        </value>
-        <value name="BOTHMOVRIGHT">
-          <block type="math_number" id="195">
-            <field name="NUM">-100</field>
-          </block>
-        </value>
-        <next>
-          <block type="robot_delay" id="231" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="232">
-                <field name="NUM">1400</field>
-              </block>
-            </value>
-            <next>
-              <block type="movement_forward" id="206">
-                <next>
-                  <block type="robot_delay" id="233" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="234">
-                        <field name="NUM">1000</field>
-                      </block>
-                    </value>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </statement>
+  <block type="movement_forward" id="367" x="-172" y="57">
     <next>
-      <block type="movement_stutter" id="254">
-        <next>
-          <block type="robot_delay" id="255" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="256">
-                <field name="NUM">1000</field>
-              </block>
-            </value>
-            <next>
-              <block type="multimedia_playwav" id="268">
-                <field name="WAV">3</field>
-                <next>
-                  <block type="multimedia_displaybmp" id="307">
-                    <field name="BMP">2</field>
-                    <next>
-                      <block type="movement_stop" id="244"></block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
+      <block type="robot_delay" id="369" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="376">
+            <field name="NUM">1000</field>
           </block>
-        </next>
+        </value>
       </block>
     </next>
   </block>
