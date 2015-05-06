@@ -8,7 +8,17 @@
           </block>
         </value>
         <next>
-          <block type="movement_reverse" id="572">
+          <block type="movement_setmotors" id="591" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="625">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="632">
+                <field name="NUM">10</field>
+              </block>
+            </value>
             <next>
               <block type="controls_whileUntil" id="537" inline="false">
                 <field name="MODE">WHILE</field>
@@ -29,20 +39,20 @@
                         <field name="NUM">-50000</field>
                       </block>
                     </value>
-                  </block>
-                </statement>
-                <next>
-                  <block type="robot_delay" id="493" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="524">
-                        <field name="NUM">5000</field>
-                      </block>
-                    </value>
                     <next>
-                      <block type="movement_stop" id="386"></block>
+                      <block type="robot_delay" id="493" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="524">
+                            <field name="NUM">5000</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_stop" id="386"></block>
+                        </next>
+                      </block>
                     </next>
                   </block>
-                </next>
+                </statement>
               </block>
             </next>
           </block>
