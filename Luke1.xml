@@ -10,6 +10,11 @@
         <next>
           <block type="controls_whileUntil" id="537" inline="false">
             <field name="MODE">WHILE</field>
+            <value name="NUMBER">
+              <block type="math_number" id="544">
+                <field name="NUM">100</field>
+              </block>
+            </value>
             <statement name="DO">
               <block type="movement_setmotors" id="396" inline="true">
                 <value name="BOTHMOVLEFT">
