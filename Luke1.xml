@@ -20,8 +20,8 @@
               </block>
             </value>
             <next>
-              <block type="multimedia_playwav" id="425">
-                <field name="WAV">3</field>
+              <block type="multimedia_playwav" id="447">
+                <field name="WAV">1</field>
                 <next>
                   <block type="movement_stop" id="386"></block>
                 </next>
